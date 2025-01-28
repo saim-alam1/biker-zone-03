@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8">
@@ -22,13 +22,28 @@
       font-family: "Poppins", serif;
     }
   </style>
+
+  <!-- Custom Properties -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#E76F51',
+            'bike-primary': '#E76F51',
+          }
+        }
+      }
+    }
+  </script>
+
 </head>
 
 <body class="font-poppins">
   <!-- Header Section -->
-  <header>
+  <header class="pr-4 md:container md:mx-auto">
     <div class="navbar bg-base-100">
-      <div class="navbar-start">
+      <div class="flex-1">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -43,7 +58,7 @@
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost text-xl">Biker Zone</a>
+        <a class="font-bold text-xl">Biker Zone</a>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
@@ -53,13 +68,13 @@
           <li><a>Contact</a></li>
         </ul>
       </div>
-      <div class="navbar-end">
-        <a class="btn btn-neutral">Login</a>
+      <div class="">
+        <a class="btn bg-bike-primary text-white">Login</a>
       </div>
     </div>
   </header>
   <!-- Main Section -->
-  <main></main>
+  <main class="pr-4 md:container md:mx-auto"></main>
   <!-- Footer Section -->
   <footer></footer>
 </body>
